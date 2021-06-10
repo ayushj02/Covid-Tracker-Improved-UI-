@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+
+/* Whole Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* CONTAINER */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+}
+
+@media screen and (max-width: 1068px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 5px;
+  }
+  .left {
+    display: none;
+  }
+}
+
+/* LEFT */
+
+.left {
+  height: 100vh;
+  width: 25vw;
+  overflow: hidden;
+}
+
+.leftimg {
+  background-size: cover;
+  height: 70%;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 10px;
+}
+
+.lbottom {
+  height: 220px;
+  width: 360px;
+  margin-left: 20px;
+  border: 2px solid honeydew;
+}
+
+.ltext {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+}
+
+.lbottom h3 {
+  margin-left: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: gray;
+}
+
+/* RIGHT */
+
+/* Top Right (Info) */
+
+.tright {
+  height: 25vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 4px;
+}
+
+.info,
+.vaccine {
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgb(199, 227, 230);
+  overflow: hidden;
+}
+
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.info-left {
+  margin-top: 50px;
+}
+
+.ibtn {
+  background-color: rgb(84, 154, 219);
+  border: 1px solid rgb(84, 154, 219);
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 5px;
+  color: rgb(228, 214, 214);
+}
+
+.vaccine {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+#doc {
+  position: relative;
+  top: 25px;
+  height: 150px;
+}
+
+#docs {
+  position: relative;
+  top: 35px;
+  height: 150px;
+}
+
+.vacc-right{
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .tright {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 5px;
+    margin: 20px;
+  }
+  .vaccine {
+    display: none;
+  }
+}
+
+/* Right Mid Section */
+
+.track {
+  height: 10vh;
+}
+
+.track h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.list {
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: rgb(232, 243, 250);
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 19px;
+  margin-right: 19px;
+  align-items: center;
+}
+
+/* Todays Section */
+
+.todays {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  border: 2px solid rgb(0, 140, 255);
+  border-radius: 18px;
+  height: 100px;
+  width: 1030px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 19px;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+#todimg{
+  height: 100px;
+  margin-left: 10px;
+}
+
+.todright {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 3px; 
+}
+
+.todright h4{
+  margin-top: 18px;
+}
+
+.tconfirm,
+.trecovered,
+.tdeceased {
+  overflow: hidden;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Boxes */
+
+.lright {
+  height: 58vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 21px;
+  grid-row-gap: 20px;
+  overflow: hidden;
+  margin-left: 40px;
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.confirmed,
+.active,
+.deceased,
+.recovered {
+  height: 170px;
+  width: 200px;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Tracker Section */
+
+.confirmed {
+  background-color: rgb(252, 204, 212);
+  color: rgb(245, 14, 53);
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.active {
+  background-color: rgb(190, 228, 233);
+  color: rgb(8, 118, 243);
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.recovered {
+  background-color: rgb(171, 228, 201);
+  color: rgb(15, 150, 37);
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.deceased {
+  background-color: rgb(201, 212, 207);
+  color: rgb(95, 95, 95);
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.lright h2 {
+  position: relative;
+  top: 43px;
+}
+
+#confirmed {
+  left: 70px;
+}
+
+#recovered {
+  left: 65px;
+}
+
+#active {
+  left: 100px;
+}
+
+#deceased {
+  left: 95px;
+}
+
+@media only screen and (max-width: 600px) {
+  .confirmed,
+  .active,
+  .recovered,
+  .deceased {
+    height: 130px;
+    width: 200px;
+    border-radius: 18px;
+  }
+  .lright {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 0px;
+    grid-column-gap: 21px;
+    margin: 20px;
+  }
+  .confirmed,
+  .active {
+    top: 18px;
+  }
+
+  .recovered,
+  .deceased {
+    bottom: 70px;
+  }
+
+  .todays {
+    margin-left: 22px;
+    height: 100px;
+    width: 420px;
+  }
+}
