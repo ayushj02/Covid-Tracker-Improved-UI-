@@ -327,3 +327,16 @@
     width: 420px;
   }
 }
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover{
+  color: aliceblue;
+}
+
+.list a{
+  color: black;
+}
